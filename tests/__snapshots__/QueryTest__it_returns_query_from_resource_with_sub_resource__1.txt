@@ -1,0 +1,5 @@
+nodes {
+sponsorEntity {
+__typename
+}
+}

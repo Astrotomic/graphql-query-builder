@@ -1,0 +1,27 @@
+query {
+user(login: "Gummibeer") {
+sponsorshipsAsMaintainer(first: 100, after: "ABC") {
+pageInfo {
+hasNextPage
+endCursor
+}
+nodes {
+sponsorEntity {
+__typename
+... on User {
+login
+avatarUrl
+databaseId
+name
+}
+... on Organization {
+login
+avatarUrl
+databaseId
+name
+}
+}
+}
+}
+}
+}

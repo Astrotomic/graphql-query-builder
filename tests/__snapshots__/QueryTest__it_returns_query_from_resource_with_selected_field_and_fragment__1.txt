@@ -1,0 +1,8 @@
+sponsorEntity {
+__typename
+... on User {
+login
+name
+databaseId
+}
+}
